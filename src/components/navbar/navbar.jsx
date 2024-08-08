@@ -9,12 +9,60 @@ const Navbar = () => {
     <nav className="navbar">
       <img src={logo} alt="Logo" className="logo" />
       <div className="desktopMenu">
-        <Link className="desktopMenuListItem"> Home</Link>
-        <Link className="desktopMenuListItem">About </Link>
-        <Link className="desktopMenuListItem">Portfolio </Link>
-        <Link className="desktopMenuListItem">Clients </Link>
+        <Link
+          activeClass="active"
+          to="introd"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          className="desktopMenuListItem"
+        >
+          {" "}
+          Home
+        </Link>
+        <Link
+          activeClass="active"
+          to="skills"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="desktopMenuListItem"
+        >
+          About{" "}
+        </Link>
+        <Link
+          activeClass="active"
+          to="woRks"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          className="desktopMenuListItem"
+        >
+          Portfolio{" "}
+        </Link>
+        <Link
+          activeClass="active"
+          to="contactPage"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          className="desktopMenuListItem"
+        >
+          Contact
+        </Link>
       </div>
-      <button className="desktopMenubtn">
+      <button
+        className="desktopMenubtn"
+        onClick={() => {
+          document
+            .getElementById("contactPage")
+            .scrollIntoView({ behavior: "smooth" });
+        }}
+      >
         <img src={contactimg} alt="" className="desktopMenuImg" /> Contact me
       </button>
     </nav>
