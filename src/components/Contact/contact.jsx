@@ -11,7 +11,7 @@ const Contact = () => {
 
     emailjs
       .sendForm("service_3tw9g3n", "template_h3ajdrq", form.current, {
-        publicKey: "",
+        publicKey: "not activated ",
       })
       .then(
         () => {

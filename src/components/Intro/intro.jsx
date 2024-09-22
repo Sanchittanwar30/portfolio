@@ -1,8 +1,7 @@
 import React from "react";
 import "./intro.css";
 import bg from "../../assets/Img1.png";
-import btnimg from "../../assets/hireme.png";
-import { Link } from "react-scroll";
+
 const Intro = () => {
   return (
     <section id="introd">
@@ -18,12 +17,6 @@ const Intro = () => {
           skills <br />
           and an enthusiastic website developer
         </p>
-        <Link>
-          <button className="btn">
-            <img src={btnimg} alt="Hire me" className="btnImg" />
-            Hire me
-          </button>
-        </Link>
       </div>
       <img src={bg} alt="Profile" className="bg" />
     </section>
